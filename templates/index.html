@@ -2,71 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flood Prediction System</title>
+    <title>Rising Water - Flood Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
 <div class="container">
+    <div class="hero">
+        <h1>🌊 Rising Water</h1>
+        <h2>AI-Based Flood Prediction System</h2>
+        <p>Predict flood probability using Machine Learning and environmental factors.</p>
+    </div>
 
-    <h1>🌊 Flood Prediction System</h1>
-    <p class="subtitle">
-        AI-powered Flood Risk Prediction using Machine Learning
-    </p>
+    <form action="/predict" method="POST" class="form-box">
+        <div class="grid">
+            {% set fields = [
+                'Monsoon Intensity', 'Topography Drainage',
+                'River Management', 'Deforestation',
+                'Urbanization', 'Climate Change',
+                'Dams Quality', 'Siltation',
+                'Agricultural Practices', 'Encroachments',
+                'Ineffective Disaster Preparedness', 'Drainage Systems',
+                'Coastal Vulnerability', 'Landslides',
+                'Watersheds', 'Deteriorating Infrastructure',
+                'Population Score', 'Wetland Loss',
+                'Inadequate Planning', 'Political Factors'
+            ] %}
 
-    <form action="/predict" method="POST">
-
-        <div class="form-grid">
-
-            <input type="number" name="feature1" placeholder="Monsoon Intensity" required>
-            <input type="number" name="feature2" placeholder="Topography Drainage" required>
-
-            <input type="number" name="feature3" placeholder="River Management" required>
-            <input type="number" name="feature4" placeholder="Deforestation" required>
-
-            <input type="number" name="feature5" placeholder="Urbanization" required>
-            <input type="number" name="feature6" placeholder="Climate Change" required>
-
-            <input type="number" name="feature7" placeholder="Dams Quality" required>
-            <input type="number" name="feature8" placeholder="Siltation" required>
-
-            <input type="number" name="feature9" placeholder="Agricultural Practices" required>
-            <input type="number" name="feature10" placeholder="Encroachments" required>
-
-            <input type="number" name="feature11" placeholder="Ineffective Disaster Preparedness" required>
-            <input type="number" name="feature12" placeholder="Drainage Systems" required>
-
-            <input type="number" name="feature13" placeholder="Coastal Vulnerability" required>
-            <input type="number" name="feature14" placeholder="Landslides" required>
-
-            <input type="number" name="feature15" placeholder="Watersheds" required>
-            <input type="number" name="feature16" placeholder="Deteriorating Infrastructure" required>
-
-            <input type="number" name="feature17" placeholder="Population Score" required>
-            <input type="number" name="feature18" placeholder="Wetland Loss" required>
-
-            <input type="number" name="feature19" placeholder="Inadequate Planning" required>
-            <input type="number" name="feature20" placeholder="Political Factors" required>
-
+            {% for field in fields %}
+            <input type="number" step="any" name="feature{{ loop.index }}" placeholder="{{ field }}" required>
+            {% endfor %}
         </div>
 
         <button type="submit">Predict Flood Risk</button>
-
     </form>
 
-    {% if prediction %}
+    {% if prediction is defined %}
+    <div class="result-card {{ risk_class }}">
+        <h2>🌊 Flood Prediction Result</h2>
 
-    <div class="result">
+        <div class="result-grid">
+            <div>
+                <h3>Probability</h3>
+                <p class="percent">{{ percent }}%</p>
+            </div>
 
-        <h2>🌊 Predicted Flood Probability: {{ prediction }}</h2>
-        <h3>{{ risk }}</h3>
+            <div>
+                <h3>Risk Level</h3>
+                <p class="risk">{{ emoji }} {{ risk }}</p>
+            </div>
+        </div>
 
+        <p class="advice">{{ advice }}</p>
     </div>
-
     {% endif %}
 
+    <div class="how">
+        <h2>How It Works</h2>
+        <p>The system takes 20 environmental input factors, scales the values, and uses a trained Machine Learning model to predict flood probability.</p>
+    </div>
+
+    <footer>
+        Developed by <b>Swetha Veluru</b> ❤️
+    </footer>
 </div>
 
 </body>
