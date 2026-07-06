@@ -1,5 +1,10 @@
 # 🌊 Rising Water – AI-Based Flood Prediction System
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost-orange)
+![Status](https://img.shields.io/badge/Status-Completed-green)
+
 ## Project Overview
 
 Rising Water is a Machine Learning-based Flood Prediction System that predicts flood probability using environmental factors. It uses an XGBoost model with a Flask web application.
