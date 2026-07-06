@@ -36,3 +36,17 @@ Flood_Prediction_Project/
 ├── static/
 ├── templates/
 └── Project Documentation/
+
+## Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### Prediction Result
+![Prediction](screenshots/prediction.png)
+
+### VS Code
+![VS Code](screenshots/vscode.png)
+
+### Documentation
+![Documentation](screenshots/documentation.png)
