@@ -40,10 +40,13 @@ Flood_Prediction_Project/
 ## Screenshots
 
 ### Home Page
-![Home](screenshots/home.png.png)
+![Home](screenshots/home.png)
 
-![Prediction](screenshots/prediction.png.png)
+### Prediction Result
+![Prediction](screenshots/prediction.png)
 
-![VS Code](screenshots/vscode.png.png)
+### VS Code
+![VS Code](screenshots/vscode.png)
 
-![Documentation](screenshots/documentation.png.png)
+### Documentation
+![Documentation](screenshots/documentation.png)
