@@ -36,6 +36,7 @@ Flood_Prediction_Project/
 ├── static/
 ├── templates/
 └── Project Documentation/
+```
 
 ## Screenshots
 
