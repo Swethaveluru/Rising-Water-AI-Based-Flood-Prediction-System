@@ -46,13 +46,21 @@ Flood_Prediction_Project/
 ## Screenshots
 
 ### Home Page
-![Home](screenshots/home.png)
+<p align="center">
+  <img src="screenshots/home.png" width="700">
+</p>
 
 ### Prediction Result
-![Prediction](screenshots/prediction.png)
+<p align="center">
+  <img src="screenshots/prediction.png" width="700">
+</p>
 
-### VS Code
-![VS Code](screenshots/vscode.png)
+### vscode
+<p align="center">
+  <img src="screenshots/vscode.png" width="700">
+</p>
 
 ### Documentation
-![Documentation](screenshots/documentation.png)
+<p align="center">
+  <img src="screenshots/documentation.png" width="700">
+</p>
