@@ -1,5 +1,9 @@
 # 🌊 Rising Water – AI-Based Flood Prediction System
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost-orange)
+![Status](https://img.shields.io/badge/Status-Completed-green)
 
 ## Project Overview
 
@@ -37,17 +41,26 @@ Flood_Prediction_Project/
 ├── static/
 ├── templates/
 └── Project Documentation/
+```
 
 ## Screenshots
 
 ### Home Page
-![Home](screenshots/home.png)
+<p align="center">
+  <img src="screenshots/home.png" width="700">
+</p>
 
 ### Prediction Result
-![Prediction](screenshots/prediction.png)
+<p align="center">
+  <img src="screenshots/prediction.png" width="700">
+</p>
 
-### VS Code
-![VS Code](screenshots/vscode.png)
+### vscode
+<p align="center">
+  <img src="screenshots/vscode.png" width="700">
+</p>
 
 ### Documentation
-![Documentation](screenshots/documentation.png)
+<p align="center">
+  <img src="screenshots/documentation.png" width="700">
+</p>
