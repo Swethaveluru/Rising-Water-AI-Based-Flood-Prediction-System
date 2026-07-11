@@ -64,3 +64,8 @@ Flood_Prediction_Project/
 <p align="center">
   <img src="screenshots/documentation.png" width="700">
 </p>
+
+## 🎥 Demo Video
+
+Watch the project demo here:
+https://drive.google.com/file/d/1bW8lfXo20J6VQaIEb46A3OU44wI083KS/view?usp=sharing
