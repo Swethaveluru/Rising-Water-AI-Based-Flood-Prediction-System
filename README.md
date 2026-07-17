@@ -32,15 +32,56 @@ Rising Water is a Machine Learning-based Flood Prediction System that predicts f
 ## Project Structure
 
 ```text
-Flood_Prediction_Project/
-├── app.py
-├── README.md
-├── requirements.txt
-├── dataset/
-├── models/
-├── static/
-├── templates/
-└── Project Documentation/
+├── 1. Brainstorming & Ideation/
+│   ├── Brainstorming & Idea Prioritization.pdf
+│   ├── Define Problem Statements.pdf
+│   └── Empathy Map.pdf
+├── 2. Requirement Analysis/
+│   ├── Customer Journey Map.pdf
+│   ├── Data Flow Diagram.pdf
+│   ├── Solution Requirements.pdf
+│   └── Technology Stack.pdf
+├── 3. Project Design Phase/
+│   ├── Problem-Solution Fit.pdf
+│   ├── Proposed Solution.pdf
+│   └── Solution Architecture.pdf
+├── 4. Project Planning Phase/
+│   └── Project Planning.pdf
+├── 5. Project Development Phase/
+│   ├── Code-Layout, Readability and Reusability.pdf
+│   ├── Coding & Solution.pdf
+│   ├── No. of Functional Features Included in the Solution.pdf
+│   └── src/
+│       ├── app.py                    # Flask web application
+│       ├── train_model.py            # Model training script
+│       ├── requirements.txt          # Project dependencies
+│       ├── data/
+│       │   └── flood_data.csv        # Historical flood dataset
+│       ├── models/
+│       │   ├── best_flood_model.pkl  # Trained XGBoost model
+│       │   └── scaler.pkl            # Feature scaler
+│       ├── notebooks/
+│       │   └── exploration_modeling.ipynb  # EDA & Model training notebook
+│       ├── templates/
+│       │   ├── index.html            # Home page
+│       │   ├── predict.html          # Prediction input form
+│       │   ├── result_flood.html     # Flood risk alert page
+│       │   └── result_no_flood.html  # No flood risk page
+│       └── static/
+│           ├── style.css             # Application styles
+│           └── script.js             # Client-side JavaScript
+├── 6.Project Testing/
+│   └── Performance Testing.pdf
+├── 7.Project Documentation/
+│   ├── Project Executable Files.pdf
+│   └── Sample Project Documentation.pdf
+├── 8.Project Demonstration/
+│   ├── Communication.pdf
+│   ├── Demonstration of Proposed Features.pdf
+│   ├── Project Demo Planning.pdf
+│   ├── Scalability & Future Plan.pdf
+│   └── Team Involvement in Demonstration.pdf
+└── README.md
 ```
 
 ## Screenshots
