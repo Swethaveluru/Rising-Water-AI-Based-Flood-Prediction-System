@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rising Water - Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="hero">
+        <h1>🌊 Rising Water</h1>
+        <h2>AI-Based Flood Prediction System</h2>
+        <p>Predict flood probability using Machine Learning and environmental factors.</p>
+    </div>
+
+    <form action="/predict" method="POST" class="form-box">
+        <div class="grid">
+            {% set fields = [
+                'Monsoon Intensity', 'Topography Drainage',
+                'River Management', 'Deforestation',
+                'Urbanization', 'Climate Change',
+                'Dams Quality', 'Siltation',
+                'Agricultural Practices', 'Encroachments',
+                'Ineffective Disaster Preparedness', 'Drainage Systems',
+                'Coastal Vulnerability', 'Landslides',
+                'Watersheds', 'Deteriorating Infrastructure',
+                'Population Score', 'Wetland Loss',
+                'Inadequate Planning', 'Political Factors'
+            ] %}
+
+            {% for field in fields %}
+            <input type="number" step="any" name="feature{{ loop.index }}" placeholder="{{ field }}" required>
+            {% endfor %}
+        </div>
+
+        <button type="submit">Predict Flood Risk</button>
+    </form>
+
+    {% if prediction is defined %}
+    <div class="result-card {{ risk_class }}">
+        <h2>🌊 Flood Prediction Result</h2>
+
+        <div class="result-grid">
+            <div>
+                <h3>Probability</h3>
+                <p class="percent">{{ percent }}%</p>
+            </div>
+
+            <div>
+                <h3>Risk Level</h3>
+                <p class="risk">{{ emoji }} {{ risk }}</p>
+            </div>
+        </div>
+
+        <p class="advice">{{ advice }}</p>
+    </div>
+    {% endif %}
+
+    <div class="how">
+        <h2>How It Works</h2>
+        <p>The system takes 20 environmental input factors, scales the values, and uses a trained Machine Learning model to predict flood probability.</p>
+    </div>
+
+    <footer>
+        Developed by <b>Swetha Veluru</b> ❤️
+    </footer>
+</div>
+
+</body>
+</html>
